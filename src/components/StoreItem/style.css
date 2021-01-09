@@ -41,8 +41,6 @@
 
 .card-product-img-wrapper img {
   transition: all 0.2s ease;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   width: 100%;
 }
 

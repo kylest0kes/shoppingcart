@@ -10,11 +10,11 @@ const StoreItem = (props) => {
     return ( 
         <div className="card card-product">
             <div className="card-product-img-wrapper">
-                <a onClick={addToCart} className="button expanded">Add to Cart</a>
-                <a onClick={addToCart} href="#"><img src="https://placeimg.com/75/90/any"/></a>
+                <span onClick={addToCart} className="button expanded">Add to Cart</span>
+                <span><img src="https://placeimg.com/75/90/any" alt="product-img"/></span>
             </div>
             <div className="card-section">
-                <a onClick={addToCart} href="#"><h3 className="card-product-name">Kickin with Kraken Tee</h3></a>
+                <span><h3 className="card-product-name">Kickin with Kraken Tee</h3></span>
                 <h5 className="card-product-price">$19.99</h5>
                 <p className="card-product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper. </p>
             </div>
