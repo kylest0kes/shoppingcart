@@ -10,7 +10,7 @@ const initialState = {
             return {
                 cartTotal: state.cartTotal + 1
             }
-        case ADD_ITEM_TO_CART:
+        case GET_CART_TOTAL:
             return {
                 ...state
             }

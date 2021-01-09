@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getNumbers } from '../../actions/getAction'
 
 import './style.css'
@@ -15,9 +16,9 @@ const Header = (props) => {
         <header className="subnav-hero-section">
             <h1 className="subnav-hero-headline">PushCart</h1>
             <ul className="subnav-hero-subnav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" className="">About</a></li>
-                <li><a href="#"><i className="fas fa-shopping-cart"></i> Cart {cartProps.cartTotal}</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/cart"><i className="fas fa-shopping-cart"></i> Cart {cartProps.cartTotal}</Link></li>
             </ul>
       </header>
     )
