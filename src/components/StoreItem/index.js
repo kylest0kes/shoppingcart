@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from "react-redux";
+import { addToCart } from '../../actions/addAction';
 
 import './style.css';
 
-export default function StoreItem() {
-    const [cartNumber, setCartNumber] = useState(0);
-
-    const addToCart = () => {
-        setCartNumber(cartNumber + 1)
-    }     
-    console.log(cartNumber)
-    return (
-        
+const StoreItem = (props) => {
+    console.log(props);
+    const { addToCart } = props;
+    return ( 
         <div className="card card-product">
             <div className="card-product-img-wrapper">
                 <a onClick={addToCart} className="button expanded">Add to Cart</a>
@@ -24,3 +21,5 @@ export default function StoreItem() {
         </div>
     )
 }
+
+export default connect(null, { addToCart }) (StoreItem)
