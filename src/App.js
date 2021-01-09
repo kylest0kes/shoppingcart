@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import StoreItem from './components/StoreItem';
+import HomePage from './pages/HomePage';
 
 import './App.css';
 
@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <StoreItem />
-      <StoreItem />
+      <HomePage />
     </div>
   );
 }
