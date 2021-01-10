@@ -5,7 +5,7 @@ export default function HomePage(props) {
     const { storeItems } = props
 
     return (
-        <div className="container" style={containerStyle}> 
+        <div className="home-container" style={containerStyle}> 
             {storeItems.map(storeItem => (
                 <StoreItem 
                     key={storeItem.id}
@@ -20,5 +20,5 @@ export default function HomePage(props) {
 }
 
 const containerStyle = {
-    margin: "10px 50px"
+    margin: "15px"
 }

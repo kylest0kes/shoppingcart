@@ -14,7 +14,7 @@ const storeItems = [
         "id": "01",
         "image": product1,
         "name": "Basic Black Tee",
-        "description": "Basic black tshirt, made out of 100% cotton.",
+        "description": "Basic black tshirt, made out of 100% cotton, comes tagless, and fits great. ",
         "price": "$7.99"
     },
     {
@@ -35,7 +35,7 @@ const storeItems = [
         "id": "04",
         "image": product4,
         "name": "Blue Denim",
-        "description": "Genuie denim, color blue, 4 pockets.",
+        "description": "Genuie denim, color blue, 4 pockets. Comes in a length of 32.",
         "price": "$23.99"
     },
     {
@@ -56,7 +56,7 @@ const storeItems = [
         "id": "07",
         "image": product7,
         "name": "Basic Red Sweatshirt",
-        "description": "Basic red sweatshirt, made out of 50% cotton and 50% polyester.",
+        "description": "Basic red sweatshirt, made out of 100% cotton.",
         "price": "$11.99"
     },
     {

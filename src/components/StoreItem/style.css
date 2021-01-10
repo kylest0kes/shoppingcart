@@ -1,7 +1,11 @@
 .card-product {
     width: 250px;
     display: inline-block;
-    margin: 15px;
+    margin: 15px 25px;
+}
+
+.card-product-name {
+  font-size: 20px;
 }
 
 .card-product:hover .card-product-img-wrapper img {
@@ -44,7 +48,7 @@
   width: 100%;
 }
 
-.card-product-img-wrapper .card-product-name {
+.card-product-img-wrapper {
   font-size: 1.375rem;
 }
 
