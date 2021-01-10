@@ -6,7 +6,6 @@ import { getNumbers } from '../../actions/getAction'
 import './style.css'
 
 const Header = (props) => {
-    console.log(props)
     const { cartProps } = props;
 
     useEffect(() => {

@@ -13,6 +13,7 @@ export default function HomePage(props) {
                     name={storeItem.name}
                     description={storeItem.description}
                     price={storeItem.price}
+                    refName={storeItem.refName}
                 />
             ))}
         </div>
