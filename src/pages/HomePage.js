@@ -1,10 +1,20 @@
 import React from 'react';
 import StoreItem from '../components/StoreItem';
 
-export default function HomePage() {
+export default function HomePage(props) {
+    const { storeItems } = props
+
     return (
         <div className="container" style={containerStyle}> 
-           <StoreItem />
+            {storeItems.map(storeItem => (
+                <StoreItem 
+                    key={storeItem.id}
+                    image={storeItem.image}
+                    name={storeItem.name}
+                    description={storeItem.description}
+                    price={storeItem.price}
+                />
+            ))}
         </div>
     )
 }
