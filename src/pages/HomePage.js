@@ -5,7 +5,6 @@ export default function HomePage() {
     return (
         <div className="container" style={containerStyle}> 
            <StoreItem />
-           <StoreItem />
         </div>
     )
 }
