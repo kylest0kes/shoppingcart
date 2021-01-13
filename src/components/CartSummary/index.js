@@ -2,18 +2,21 @@ import React from 'react';
 
 import './style.css'
 
-export default function CartSummary() {
+export default function CartSummary(props) {
+    const { cartCost } = props
+    
     return (
-        <div className="checkout-summary-details">
-            <div className="left">
-                <p><strong>Subtotal:</strong></p>
-                <p><strong>Tax:</strong></p>
-                <p><strong>Total:</strong></p>
+        <div>
+            <div className="checkout-summary-details">
+                <div className="left">
+                    <p><strong>Total:</strong></p>
+                </div>
+                <div className="right">
+                    <p>${cartCost}</p>
+                </div>
             </div>
-            <div className="right">
-                <p>$10.99</p>
-                <p>$2.00</p>
-                <p>$12.99</p>
+            <div className="purchase-btn">
+                <button className="button expanded checkout-btn">Purchase</button>
             </div>
         </div>
 

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import CartTotal from '../components/CartTotal';
 
 import CartItem from '../components/CartItem';
+import CartSummary from '../components/CartSummary';
 
 function Cart({ cartProps }) {
     console.log(cartProps)    
@@ -33,6 +34,7 @@ function Cart({ cartProps }) {
         <div className="checkout-summary" style={summaryStyle}>
             <CartTotal cartTotal={cartProps.cartTotal}/>
             { itemsInCart }
+            <CartSummary cartCost={cartProps.cartCost.toFixed(2)} />
         </div>
     )    
 }

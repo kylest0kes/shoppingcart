@@ -19,15 +19,6 @@ export default function CartItem(props) {
                     <a href="#">Remove</a>
                 </div>
             </div>
-            <div class="checkout-summary-details">
-                <div class="left">
-                    <p><strong>Total:</strong></p>
-                </div>
-                <div class="right">
-                    <p>$total</p>
-                </div>
-            </div>
-            <button class="button expanded checkout-btn">Proceed to Checkout</button>
         </div>
     )
 }

@@ -36,18 +36,4 @@
   font-weight: bold;
 }
 
-.checkout-summary-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid #e6e6e6;
-  border-top: none;
-}
 
-.checkout-btn {
-    margin: 15px 0;
-}
