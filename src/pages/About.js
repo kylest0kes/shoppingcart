@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react';
 import img1 from '../images/aboutpg-img1.jpeg';
 import img2 from '../images/kyle-logo.png';
 
@@ -18,8 +18,16 @@ export default function About() {
                     <p className="project-desc">React.js, Redux, Foundation Framework</p>
                 </div>
                 <div className="marketing-site-content-section-block small-order-2 medium-order-1">
-                    <h3 className="marketing-site-content-section-block-header">Kyle Stokes</h3>
-                    <p className="marketing-site-content-section-block-subheader subheader">Full Stack Web Developer who is an innovative problem solver, and who is not only able to succeed, but to thrive, in any environment I find myself in. Graduate of the Full Stack Web Development coding bootcamp from the University of Central Florida, equipping me with an in-depth understanding, and firm foundation in frontend HTML, CSS, JavaScript, and jQuery, as well as backend APIs, MySQL, MongoDB, and Express.  Carrying a reputation for prompt completion, with great attention to thoroughness and detail, I have been promoted by multiple employers to ensure success, both individually, and as a team. My technical skills combined with my experience in fast-paced, result-driven, collaborative environments make me a strong addition to any Web Development team.</p>
+                    <h3 className="marketing-site-content-section-block-header">Built By:</h3>
+                    <h3 className="">Kyle Stokes</h3>
+                    <div className="social-footer-icons">
+                        <ul className="menu simple">
+                            <li><a href="https://github.com/kylest0kes"><i className="about-icons fab fa-github-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kylest0kes/"><i className="about-icons fab fa-linkedin"></i></a></li>
+                            <li><a href="mailto:kylestokes1551@gmail.com"><i className="about-icons fas fa-envelope"></i></a></li>
+                            <li><a href="http://kyle-stokes.com/"><i className="about-icons far fa-window-maximize"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="marketing-site-content-section-img small-order-1 medium-order-2">
                     <img src={img2} alt="img" />

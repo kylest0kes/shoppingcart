@@ -48,6 +48,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -57,6 +59,7 @@
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+
 }
 
 @media screen and (min-width: 40em) {
@@ -69,7 +72,7 @@
 }
 
 .marketing-site-content-section-block-header {
-  font-size: 48px;
+  font-size: 38px;
   text-decoration: underline;
 }
 
@@ -85,4 +88,18 @@
 
 .project-desc {
   font-size: 20px;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.about-icons {
+  font-size: 30px;
+  color: black;
+}
+
+.about-icons:hover {
+  color: rgb(99, 211, 64);
+  transition: color 0.3s ease-in;
 }
