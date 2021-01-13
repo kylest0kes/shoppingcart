@@ -6,7 +6,7 @@ import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 
 function Cart({ cartProps }) {
-    console.log(cartProps)    
+    // console.log(cartProps)    
     let itemsInCart = [];
 
     Object.keys(cartProps.items).forEach( (item) => {
