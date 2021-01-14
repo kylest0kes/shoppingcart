@@ -22,10 +22,10 @@ export default function About() {
                     <h3 className="">Kyle Stokes</h3>
                     <div className="social-footer-icons">
                         <ul className="menu simple">
-                            <li><a href="https://github.com/kylest0kes"><i className="about-icons fab fa-github-square"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/kylest0kes/"><i className="about-icons fab fa-linkedin"></i></a></li>
-                            <li><a href="mailto:kylestokes1551@gmail.com"><i className="about-icons fas fa-envelope"></i></a></li>
-                            <li><a href="http://kyle-stokes.com/"><i className="about-icons far fa-window-maximize"></i></a></li>
+                            <li><a href="https://github.com/kylest0kes" target="blank"><i className="about-icons fab fa-github-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kylest0kes/" target="blank"><i className="about-icons fab fa-linkedin"></i></a></li>
+                            <li><a href="mailto:kylestokes1551@gmail.com" target="blank"><i className="about-icons fas fa-envelope"></i></a></li>
+                            <li><a href="http://kyle-stokes.com/" target="blank"><i className="about-icons far fa-window-maximize"></i></a></li>
                         </ul>
                     </div>
                 </div>

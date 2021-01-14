@@ -3,13 +3,14 @@ import React from 'react';
 import './style.css';
 
 export default function CartItem(props) {
+    console.log(props)
     const { name, price, amount, img } = props;
 
     return (
         <div class="checkout-summary">
             
             <div class="checkout-summary-item">
-                <img src={img} alt="cart img"/>
+                <img className="cart-item-img" src={img} alt="cart img"/>
                 <div class="item-name">
                     <span>{name}</span>
                     <p><span class="title">Quantity: </span>{amount}</p>

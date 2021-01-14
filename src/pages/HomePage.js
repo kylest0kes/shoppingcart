@@ -3,6 +3,7 @@ import StoreItem from '../components/StoreItem';
 
 export default function HomePage(props) {
     const { storeItems } = props
+    console.log(storeItems)
 
     return (
         <div className="home-container" style={containerStyle}> 

@@ -5,7 +5,6 @@ import { addToCart } from '../../actions/addAction';
 import './style.css';
 
 const StoreItem = (props) => {
-    // console.log(props)
     const { addToCart, image, name, description, price, refName } = props;
     return ( 
         <div className="card card-product">
