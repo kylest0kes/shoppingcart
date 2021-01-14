@@ -41,3 +41,10 @@
   height: 150px;
 }
 
+.quantity-btns {
+  margin: 0 5px;
+}
+
+.quantity-btns:hover {
+  cursor: pointer;
+}

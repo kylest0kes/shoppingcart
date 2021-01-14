@@ -11,12 +11,16 @@ export default function CartItem(props) {
             
             <div class="checkout-summary-item">
                 <img className="cart-item-img" src={img} alt="cart img"/>
-                <div class="item-name">
+                <div className="item-name">
                     <span>{name}</span>
-                    <p><span class="title">Quantity: </span>{amount}</p>
+                    <p>
+                        <button className="quantity-btns"><i className="fas fa-minus-square"></i></button>
+                        <span className="title">Quantity: </span>{amount}
+                        <button className="quantity-btns"><i className="fas fa-plus-square"></i></button>
+                    </p>
                 </div>
-                <div class="item-price">
-                    <p class="title">${price}</p>
+                <div className="item-price">
+                    <p className="title">${price}</p>
                     <a href="#">Remove</a>
                 </div>
             </div>
