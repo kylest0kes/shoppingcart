@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import { cartItemQuantity } from '../actions/cartItemQuantity';
+
 
 import CartTotal from '../components/CartTotal';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 
-function Cart({ cartProps }) {
-    console.log(cartProps)    
+function Cart({ cartProps, cartItemQuantity }) {
+    // console.log(cartProps)    
     let itemsInCart = [];
 
     Object.keys(cartProps.items).forEach( (item) => {
-        console.log(item);
+        // console.log(item);
         if(cartProps.items[item].inCart) {
             itemsInCart.push(cartProps.items[item])
         } 
@@ -19,15 +21,17 @@ function Cart({ cartProps }) {
     console.log(itemsInCart)
  
     itemsInCart = itemsInCart.map( (item, index) => {
-        // console.log(index)
+        console.log(item)
         return (
             <div>
                 <CartItem 
                     key={index}
                     name={item.name}
+                    refName={item.refName}
                     price={item.price}
                     amount={item.amount}
                     img={item.img}
+                    cartItemQuantity={cartItemQuantity}
                 />
             </div>
         )
@@ -52,6 +56,6 @@ const mapStateToProps = state => ({
     cartProps: state.cartState
 })
 
-export default connect(mapStateToProps )(Cart)
+export default connect(mapStateToProps, { cartItemQuantity } )(Cart)
 
 

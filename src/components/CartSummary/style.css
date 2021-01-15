@@ -14,3 +14,7 @@
 .checkout-btn {
     margin: 15px 0;
 }
+
+.checkout-btn:hover {
+  background-color: green;
+}

@@ -18,6 +18,7 @@ const initialState = {
     items: {
         basicBlackTee: {
             name: "Basic Black Tee",
+            refName: "basicBlackTee",
             price: 7.99,
             amount: 0,
             img: product1,
@@ -25,6 +26,7 @@ const initialState = {
         },
         basicGraySweatshirt: {
             name: "Basic Gray Sweatshirt",
+            refName: "basicGraySweatshirt",
             price: 11.99,
             amount: 0,
             img: product2,
@@ -32,6 +34,7 @@ const initialState = {
         },
         basicBlueHoodie: {
             name: "Basic Blue Hoodie",
+            refName: "basicBlueHoodie",
             price: 17.99,
             amount: 0,
             img: product3,
@@ -39,6 +42,7 @@ const initialState = {
         },
         blueDenim: {
             name: "Blue Denim",
+            refName: "blueDenim",
             price: 23.99,
             amount: 0,
             img: product4,
@@ -46,6 +50,7 @@ const initialState = {
         },
         grayLongsleeveButtonUp: {
             name: "Gray Longsleeve Button-up",
+            refName: "grayLongsleeveButtonUp",
             price: 14.99,
             amount: 0,
             img: product5,
@@ -53,6 +58,7 @@ const initialState = {
         },
         blackSweatpants: {
             name: "Black Sweatpants",
+            refName: "blackSweatpants",
             price: 13.99,
             amount: 0,
             img: product6,
@@ -60,6 +66,7 @@ const initialState = {
         },
         basicRedSweatshirt: {
             name: "Basic Red Sweatshirt",
+            refName: "basicRedSweatshirt",
             price: 11.99,
             amount: 0,
             img: product7,
@@ -67,6 +74,7 @@ const initialState = {
         },
         codingShirt: {
             name: "Coding Shirt",
+            refName: "codingShirt",
             price: 9.99,
             amount: 0,
             img: product8,
@@ -74,6 +82,7 @@ const initialState = {
         },
         blackChinos: {
             name: "Black Chinos",
+            refName: "blackChinos",
             price: 21.99,
             amount: 0,
             img: product9,
@@ -81,6 +90,7 @@ const initialState = {
         },
         codingHoodie: {
             name: "codingHoodie",
+            refName: "codingHoodie",
             price: 19.99,
             amount: 0,
             img: product10,
