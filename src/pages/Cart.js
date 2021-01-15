@@ -21,7 +21,7 @@ function Cart({ cartProps, cartItemQuantity }) {
     console.log(itemsInCart)
  
     itemsInCart = itemsInCart.map( (item, index) => {
-        console.log(item)
+        // console.log(item)
         return (
             <div>
                 <CartItem 

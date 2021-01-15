@@ -20,7 +20,7 @@ export default function CartItem(props) {
                     </p>
                 </div>
                 <div className="item-price">
-                    <p className="title">${price}</p>
+                    <p className="title">${price * amount}</p>
                     <a href="#">Remove</a>
                 </div>
             </div>
