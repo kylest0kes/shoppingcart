@@ -103,3 +103,15 @@
   color: rgb(99, 211, 64);
   transition: color 0.3s ease-in;
 }
+
+.home-container {
+  /* -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; */
+}

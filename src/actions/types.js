@@ -8,3 +8,4 @@ export const DECREASE_QUANTITY = 'DECREASE_QUANTITY';
 
 export const CLEAR_ITEM = 'CLEAR_ITEM';
 
+export const PURCHASE_ITEMS = 'PURCHASE_ITEMS';

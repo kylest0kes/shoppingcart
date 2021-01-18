@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css'
 
 export default function CartSummary(props) {
-    const { cartCost } = props
+    const { cartCost, purchaseItems } = props
     
     return (
         <div>
@@ -16,7 +16,7 @@ export default function CartSummary(props) {
                 </div>
             </div>
             <div className="purchase-btn">
-                <button className="button expanded checkout-btn">Purchase</button>
+                <button onClick={() => purchaseItems()} className="button expanded checkout-btn">Purchase</button>
             </div>
         </div>
 

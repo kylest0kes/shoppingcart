@@ -1,6 +1,8 @@
 import React from 'react';
 import StoreItem from '../components/StoreItem';
 
+import './pages.css';
+
 export default function HomePage(props) {
     const { storeItems } = props
 
@@ -23,3 +25,4 @@ export default function HomePage(props) {
 const containerStyle = {
     margin: "15px"
 }
+

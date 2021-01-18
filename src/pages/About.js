@@ -2,7 +2,7 @@ import React from 'react';
 import img1 from '../images/aboutpg-img1.jpeg';
 import img2 from '../images/kyle-logo.png';
 
-import './about.css'
+import './pages.css'
 
 export default function About() {
     return (
