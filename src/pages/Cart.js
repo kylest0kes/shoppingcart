@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { cartItemQuantity } from '../actions/cartItemQuantity';
 import { clearItem } from '../actions/clearItem';
-import { purchaseItems } from '../actions/purchaseItems';
 
 
 import CartTotal from '../components/CartTotal';
@@ -45,7 +44,6 @@ function Cart({ cartProps, cartItemQuantity, clearItem, purchaseItems }) {
             { itemsInCart }
             <CartSummary 
             cartCost={cartProps.cartCost.toFixed(2)} 
-            purchaseItems={purchaseItems}
             />
         </div>
     )    
@@ -61,6 +59,6 @@ const mapStateToProps = state => ({
     cartProps: state.cartState
 })
 
-export default connect(mapStateToProps, { cartItemQuantity, clearItem, purchaseItems } )(Cart)
+export default connect(mapStateToProps, { cartItemQuantity, clearItem } )(Cart)
 
 

@@ -1,4 +1,4 @@
-import { ADD_ITEM_TO_CART, GET_CART_TOTAL, INCREASE_QUANTITY, DECREASE_QUANTITY, CLEAR_ITEM, PURCHASE_ITEMS } from "../actions/types";
+import { ADD_ITEM_TO_CART, GET_CART_TOTAL, INCREASE_QUANTITY, DECREASE_QUANTITY, CLEAR_ITEM } from "../actions/types";
 import product1 from '../images/product1.jpg';
 import product2 from '../images/product2.jpg';
 import product3 from '../images/product3.jpeg';
@@ -167,16 +167,6 @@ export default (state = initialState, action) => {
                 items: {
                     ...state.items,
                     [action.payload]: itemSelected
-                }
-            }
-        case PURCHASE_ITEMS:
-            
-            return {
-                ...state,
-                cartTotal: 0,
-                cartCost: 0,
-                items: {
-                    
                 }
             }
         default:
