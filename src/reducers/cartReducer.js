@@ -176,7 +176,7 @@ export default (state = initialState, action) => {
                 cartTotal: 0,
                 cartCost: 0,
                 items: {
-                    ...state
+                    
                 }
             }
         default:
