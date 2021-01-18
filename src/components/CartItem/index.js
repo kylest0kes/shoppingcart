@@ -4,7 +4,7 @@ import './style.css';
 
 export default function CartItem(props) {
     console.log(props)
-    const { name, price, amount, img, cartItemQuantity, refName } = props;
+    const { name, price, amount, img, cartItemQuantity, refName, clearItem } = props;
 
     return (
         <div className="checkout-summary">
@@ -21,7 +21,7 @@ export default function CartItem(props) {
                 </div>
                 <div className="item-price">
                     <p className="title">${price * amount}</p>
-                    <a href="#">Remove</a>
+                    <span className="remove-btn" onClick={() => clearItem(refName)}>Remove</span>
                 </div>
             </div>
         </div>

@@ -48,3 +48,8 @@
 .quantity-btns:hover {
   cursor: pointer;
 }
+
+.remove-btn:hover {
+  cursor: pointer;
+  color: red;
+}

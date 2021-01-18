@@ -1,13 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { cartItemQuantity } from '../actions/cartItemQuantity';
+import { clearItem } from '../actions/clearItem'
 
 
 import CartTotal from '../components/CartTotal';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 
-function Cart({ cartProps, cartItemQuantity }) {
+function Cart({ cartProps, cartItemQuantity, clearItem }) {
     // console.log(cartProps)    
     let itemsInCart = [];
 
@@ -32,6 +33,7 @@ function Cart({ cartProps, cartItemQuantity }) {
                     amount={item.amount}
                     img={item.img}
                     cartItemQuantity={cartItemQuantity}
+                    clearItem={clearItem}
                 />
             </div>
         )
@@ -56,6 +58,6 @@ const mapStateToProps = state => ({
     cartProps: state.cartState
 })
 
-export default connect(mapStateToProps, { cartItemQuantity } )(Cart)
+export default connect(mapStateToProps, { cartItemQuantity, clearItem } )(Cart)
 
 
