@@ -1,4 +1,4 @@
-import { ADD_ITEM_TO_CART, GET_CART_TOTAL, INCREASE_QUANTITY, DECREASE_QUANTITY } from "../actions/types";
+import { ADD_ITEM_TO_CART, GET_CART_TOTAL, INCREASE_QUANTITY, DECREASE_QUANTITY, CLEAR_ITEM } from "../actions/types";
 import product1 from '../images/product1.jpg';
 import product2 from '../images/product2.jpg';
 import product3 from '../images/product3.jpeg';
@@ -125,6 +125,7 @@ export default (state = initialState, action) => {
             itemSelected.amount += 1;
             return {
                 ...state,
+                cartTotal: state.cartTotal + 1,
                 cartCost: state.cartCost + state.items[action.payload].price,
                 items: {
                     ...state.items,
@@ -134,23 +135,40 @@ export default (state = initialState, action) => {
         case DECREASE_QUANTITY:
             itemSelected = { ...state.items[action.payload]};
             let newCartCost = 0;
+            let newCartTotal = 0;
 
             if(itemSelected.amount === 0) {
                 itemSelected.amount = 0;
-                newCartCost = state.cartCost
+                newCartCost = state.cartCost;
+                newCartTotal = state.cartTotal;
             } else {
                 itemSelected.amount -= 1;
                 newCartCost = state.cartCost - state.items[action.payload].price;
+                newCartTotal = state.cartTotal - 1;
             }
             return {
                 ...state,
                 cartCost: newCartCost,
+                cartTotal: newCartTotal,
                 items: {
                     ...state.items,
                     [action.payload]: itemSelected
                 }
             }
-            
+        case CLEAR_ITEM:
+            itemSelected = { ...state.items[action.payload]};    
+            let prevItemAmount = itemSelected.amount;
+            itemSelected.amount = 0;
+            itemSelected.inCart = false;
+            return {
+                ...state,
+                cartTotal: state.cartTotal - prevItemAmount,
+                cartCost: state.cartCost - (prevItemAmount * itemSelected.price),
+                items: {
+                    ...state.items,
+                    [action.payload]: itemSelected
+                }
+            }
         default:
             return state;
     }
