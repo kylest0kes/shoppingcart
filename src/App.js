@@ -21,13 +21,13 @@ function App() {
         <div className="App">
         <Header />
           <Switch>
-            <Route exact path='/' render={() => (
+            <Route exact path='/shoppingcart' render={() => (
               <HomePage storeItems={storeItems}/>
             )} />
-            <Route path='/cart' render={() => (
+            <Route exact path='/cart' render={() => (
               <Cart />
             )} />
-            <Route path='/about' render={() => (
+            <Route exact path='/about' render={() => (
                <About />
             )} />
           </Switch>
