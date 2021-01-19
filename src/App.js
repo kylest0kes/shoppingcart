@@ -21,15 +21,15 @@ function App() {
         <div className="App">
         <Header />
           <Switch>
-            <Route exact path='/' >
+            <Route exact path='/' render={() => (
               <HomePage storeItems={storeItems}/>
-            </Route>
-            <Route path='/cart'>
+            )} />
+            <Route  path='/cart' render={() => (
               <Cart />
-            </Route>
-            <Route path='/about'>
+            )} />
+            <Route  path='/about' render={() => (
                <About />
-              </Route>
+            )} />
           </Switch>
         </div>
       </Router>
