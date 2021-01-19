@@ -21,7 +21,7 @@ function App() {
         <div className="App">
         <Header />
           <Switch>
-            <Route exact path='/shoppingcart' render={() => (
+            <Route exact path='/' render={() => (
               <HomePage storeItems={storeItems}/>
             )} />
             <Route exact path='/cart' render={() => (
