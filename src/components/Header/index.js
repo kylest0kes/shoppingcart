@@ -16,7 +16,7 @@ const Header = (props) => {
         <header className="subnav-hero-section">
             <h1 className="subnav-hero-headline">PushCart</h1>
             <ul className="subnav-hero-subnav">
-                <li><Link to="/shoppingcart">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/cart"><i className="fas fa-shopping-cart"></i> Cart {cartProps.cartTotal}</Link></li>
             </ul>
