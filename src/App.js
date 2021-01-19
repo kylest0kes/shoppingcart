@@ -24,10 +24,10 @@ function App() {
             <Route exact path='/' render={() => (
               <HomePage storeItems={storeItems}/>
             )} />
-            <Route exact path='/cart' render={() => (
+            <Route path='/cart' render={() => (
               <Cart />
             )} />
-            <Route exact path='/about' render={() => (
+            <Route path='/about' render={() => (
                <About />
             )} />
           </Switch>
