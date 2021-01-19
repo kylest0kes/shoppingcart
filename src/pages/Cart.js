@@ -8,7 +8,7 @@ import CartTotal from '../components/CartTotal';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 
-function Cart({ cartProps, cartItemQuantity, clearItem, purchaseItems }) {
+function Cart({ cartProps, cartItemQuantity, clearItem }) {
     // console.log(cartProps)    
     let itemsInCart = [];
 
@@ -19,7 +19,6 @@ function Cart({ cartProps, cartItemQuantity, clearItem, purchaseItems }) {
         } 
     });
 
-    console.log(itemsInCart)
  
     itemsInCart = itemsInCart.map( (item, index) => {
         return (

@@ -3,7 +3,6 @@ import React from 'react';
 import './style.css';
 
 export default function CartItem(props) {
-    console.log(props)
     const { name, price, amount, img, cartItemQuantity, refName, clearItem } = props;
 
     return (

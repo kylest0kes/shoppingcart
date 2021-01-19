@@ -106,7 +106,6 @@ export default (state = initialState, action) => {
             itemSelected = { ...state.items[action.payload]}
             itemSelected.amount += 1;
             itemSelected.inCart = true;
-            console.log(itemSelected)
             return {
                 ...state,
                 cartTotal: state.cartTotal + 1,
