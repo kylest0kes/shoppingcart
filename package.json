@@ -1,6 +1,6 @@
 {
   "homepage": "http://kylest0kes.github.io/shoppingcart",
-  "name": "PushCart",
+  "name": "shoppingcart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
