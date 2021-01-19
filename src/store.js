@@ -13,7 +13,7 @@ function saveToLocalStorage(state) {
 }
 
 function loadFromLocalStorage() {
-    console.log("in this bitchhh")
+    console.log("in this biiii")
     try {
         const serializedState = localStorage.getItem('state');
         if (serializedState === null) {

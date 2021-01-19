@@ -11,6 +11,7 @@ const Header = (props) => {
     useEffect(() => {
         getNumbers();
     }, [])
+    
     return (
         <header className="subnav-hero-section">
             <h1 className="subnav-hero-headline">PushCart</h1>
