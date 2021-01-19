@@ -1,6 +1,6 @@
 
 # PushCart
-[![GitHub license](https://img.shields.io/badge/license-None-important.svg)](https://kylest0kes.github.io/shoppingcart/)
+[![GitHub license](https://img.shields.io/badge/license-None-important.svg)]()
 
 ## Description
 
