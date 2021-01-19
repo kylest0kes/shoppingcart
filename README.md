@@ -1,6 +1,6 @@
 
 # PushCart
-[![GitHub license](https://img.shields.io/badge/license-None-important.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-None-important.svg)](https://shoppingcart-redux.herokuapp.com/)
 
 ## Description
 
